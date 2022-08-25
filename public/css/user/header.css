@@ -1,0 +1,443 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Ubuntu", sans-serif;
+}
+
+.categoriesGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.cat {
+    position: relative;
+}
+
+.cat::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #000000;
+    opacity: 0.4;
+    height: 100%;
+    width: 100%;
+}
+
+.cat img {
+    height: 100%;
+    width: 100%;
+    transition: all .4s linear;
+}
+
+.cat img:hover {
+    transform: rotate(3deg);
+
+}
+
+.cat span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-weight: bold;
+    z-index: 4;
+    text-align: center;
+    width: 176px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Small */
+
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+/* Medium */
+
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+/* Large */
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+/*start header*/
+header {
+    background-color: #444;
+    width: 100%;
+    position: fixed;
+    padding: 10px 200px;
+    z-index: 9999;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .container .main {
+    display: flex;
+    align-items: center;
+}
+
+header .container .logo {
+    text-decoration: none;
+    color: #3a6cf4;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.8em;
+}
+
+header .container .nav a {
+    color: #fff;
+    text-decoration: none;
+    /* font-size: 1.1em;
+    font-weight: 500; */
+    padding-left: 30px;
+}
+
+header .right {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .right a {
+    color: #fff;
+    padding-left: 30px;
+    text-decoration: none;
+}
+
+header .right a:first-child {
+    color: #fff;
+    margin-top: 5px;
+    font-size: 18px;
+    line-height: 1.2;
+    margin-left: -32px;
+}
+
+header .right img {
+    width: 36px;
+    height: 36px;
+    /*  margin: -1px 0 1px;
+      vertical-align: middle;
+      display: inline-block;
+      border: 0; */
+    border-radius: 100px;
+}
+
+/*End header*/
+
+/*start landing*/
+.landing {
+    background-image: url('../../images/landing.jpg');
+    background-size: cover;
+    background-position: center 48%;
+    min-height: 470px;
+    padding: 0 15px;
+    text-align: center;
+    position: relative;
+}
+
+.landing .container .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.landing .container .content h1 {
+    font-size: 31px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.landing .container .content h3 {
+    margin: 23px 0 31px;
+}
+
+.services {
+    width: 100%;
+    padding: 70px 0 40px;
+    font-family: "Noto Kufi Arabic", "Open Sans", sans-serif;
+}
+
+.services_title {
+    width: 100%;
+    position: relative;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.services_title h2 {
+    font-size: 24px;
+    position: relative;
+    text-align: center;
+    display: inline-block;
+    margin: 30px 0;
+}
+
+/*Welcome blade*/
+.search-container {
+    position: relative;
+    margin-top: 15px;
+}
+
+.search-container .search {
+    width: 100%;
+    padding: 110px 30px;
+    background-color: #444444;
+    background-image: url("../../images/pattern_search.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    font-family: "Noto Kufi Arabic", "Open Sans", sans-serif;
+}
+
+.search-container .search > h2 {
+    font-size: 24px;
+    color: #ffffff;
+    margin: 0;
+
+}
+
+.search__box {
+    width: 100%;
+    max-width: 687px;
+    height: 67px;
+    margin: 40px auto 0;
+    background: #ffffff;
+    padding: 7px;
+    display: flex;
+    align-items: center;
+}
+
+.search__box span {
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    color: #444444;
+    padding: 0 15px 0 0;
+    width: 45px;
+    min-width: 45px;
+}
+
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.search__box form {
+    width: 100%;
+}
+
+.search__box input {
+    font-size: 23px;
+    font-family: "Noto Naskh Arabic", "Open Sans", serif;
+    height: 52px;
+    border: none;
+    outline: none;
+    padding: 0 0 0 15px;
+    display: inline-block;
+    width: calc(100% - 120px);
+}
+
+.search-button {
+    height: 52px;
+    background: #52B035;
+    color: #ffffff;
+    outline: none;
+    border: none;
+    font-family: inherit;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 0 15px;
+    width: 84px;
+    min-width: 84px;
+    float: left;
+}
+
+/*navigation profile dropdown*/
+.navigation {
+    position: absolute;
+    top: 0px;
+    right: 20px;
+    width: 120px;
+    height: 60px;
+    background: #444;
+    display: flex;
+    justify-content: space-between;
+    transition: height 0.5s, width 0.5s;
+    transition-delay: 0s, 0.75s;
+    overflow: hidden;
+    box-shadow: 0 25px 35px rgba(0, 0, 0, 0.1);
+}
+
+.navigation.active {
+    width: 214px;
+    height: 390px;
+    transition: width 0.5s, height 0.5s;
+    transition-delay: 0s, 0.75s;
+}
+
+.navigation .menuToggle {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.navigation .menuToggle::before {
+    content: "";
+    position: absolute;
+    width: 32px;
+    height: 2px;
+    background: #fff;
+    transform: translateY(-10px);
+    box-shadow: 0 10px #555;
+    transition: 0.5s;
+}
+
+.navigation.active .menuToggle::before {
+    transform: translateY(0px) rotate(45deg);
+    box-shadow: 0 0 #555;
+}
+
+.navigation .menuToggle::after {
+    content: "";
+    position: absolute;
+    width: 32px;
+    height: 2px;
+    background: #fff;
+    transform: translateY(10px);
+    transition: 0.5s;
+}
+
+.navigation.active .menuToggle::after {
+    transform: translateY(0px) rotate(-45deg);
+}
+
+.navigation .userBx {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    transition: 0.5s;
+    transition-delay: 0.5s;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.navigation.active .userBx {
+    width: calc(100% - 60px);
+    transition-delay: 0s;
+}
+
+.navigation .userBx .imgBx {
+    position: relative;
+    min-width: 60px;
+    height: 60px;
+    border: 10px solid #444;
+    background: #555;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.navigation .userBx .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.navigation .userBx .username {
+    white-space: nowrap;
+    color: #fff;
+    font-size: 1.1em;
+    margin-top: 10px;
+}
+
+.menu {
+    position: absolute;
+    width: 100%;
+    height: calc(100% - 60px);
+    margin-top: 60px;
+    padding: 20px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.menu li {
+    list-style: none;
+}
+
+.menu li a {
+    display: inline-block;
+    text-decoration: none;
+    margin: 20px 0;
+    font-size: 1em;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #fff;
+}
+
+.menu li a:hover {
+    color: #4e65ff;
+}
+
+.menu li a ion-icon {
+    font-size: 1.5em;
+}
+

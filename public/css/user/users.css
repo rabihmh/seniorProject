@@ -1,0 +1,172 @@
+.user_profile_header {
+    padding: 49px 18px 0px 18px;
+    background: #fff;
+}
+
+.user_profile_header .info {
+    margin-bottom: 48px;
+    text-align: center;
+}
+
+.user_profile_header .relative {
+    position: relative;
+    width: 128px;
+    height: 128px;
+    margin: auto;
+}
+
+.user_profile_header img {
+    box-shadow: 0 0 3px 1px rgb(0 0 0 / 5%) !important;
+    color: #fff;
+    border-radius: 50%;
+    width: 100%;
+}
+
+h1.username {
+    line-height: 1.84em;
+    font-size: 24px !important;
+}
+
+.sup {
+    font-size: 13px;
+    position: relative;
+    vertical-align: baseline;
+    top: -0.5em;
+}
+
+.sup span {
+    width: 15px;
+    height: 15px;
+    background-color: #52b035;
+    position: absolute;
+    border-radius: 50%;
+    top: -31px;
+    right: -50px;
+}
+
+.user_profile_header .data {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+}
+
+.user_profile_header .data .tabs {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+    display: flex;
+    align-items: center;
+}
+
+.user_profile_header .data .edit {
+    display: flex;
+    justify-content: flex-end;
+    flex: 1;
+}
+
+.o-wrapper {
+    width: 100%;
+    max-width: 1400px;
+    margin: auto;
+    box-sizing: border-box;
+    padding: 48px 18px;
+}
+
+[data-tab-info] {
+    display: none;
+}
+
+.active[data-tab-info] {
+    display: block;
+}
+
+.tab-content {
+
+}
+
+.tabs span {
+    padding: 10px 20px;
+    transition: 0.3s all ease-in-out;
+}
+
+.tabs span:hover,
+.tabs span.active {
+    background-color: #ddd;
+}
+.o-wrapper .inside .first{
+    display: flex;
+
+    justify-content: space-between;
+}
+.o-wrapper .first .right{
+    flex-basis: 60%;
+
+}
+
+.o-wrapper .first .right .top,
+.o-wrapper .first .right .bottom{
+    background-color: #ddd;
+    padding: 10px;
+}
+
+.o-wrapper .first .right .top h3,.o-wrapper .first .right .bottom h3{
+    font-size: 17px;
+    border-bottom: 1px solid #ccc;
+}
+.o-wrapper .first .right .bottom{
+    margin-top: 50px;
+
+}
+.o-wrapper .first .left{
+    flex-basis: 30%;
+
+}
+.o-wrapper .first .left h3{
+    border-bottom: 1px solid #ccc;
+    font-size: 17px;
+}
+.o-wrapper .first .left .top,
+.o-wrapper .first .left .bottom{
+    background-color: #ddd;
+    padding: 10px;
+
+}
+.o-wrapper .first .left .bottom{
+    margin-top: 50px;
+}
+/* table of freelancer*/
+.table-responsive {
+    background-color: #fff;
+    
+}
+table tr {
+    display: flex;
+}
+
+table .img-content img {
+    width: 70px;
+    border-radius: 50%;
+}
+table .data {
+    flex: 1;
+}
+table .data .row1 {
+    display: flex;
+}
+table .data .row1 .user-detailes {
+}
+table .data .row1 .hire-me {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+table .data .row2 {
+    height: 50px;
+    overflow: hidden;
+    margin-top: 5px;
+}
+table .data .row2 p {
+    font-size: 15px;
+    line-height: 1.8;
+}

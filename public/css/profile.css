@@ -1,0 +1,157 @@
+body {
+    margin-top: 20px;
+    background-color: #f2f6fc;
+    color: #69707a;
+}
+.img-account-profile {
+    height: 10rem;
+}
+.rounded-circle {
+    border-radius: 50% !important;
+}
+/*
+.card {
+  box-shadow: 0 0.15rem 1.75rem 0 rgb(33 40 50 / 15%);
+}*/
+.card .card-header {
+    font-weight: 500;
+}
+.card-header:first-child {
+    border-radius: 0.35rem 0.35rem 0 0;
+}
+.card-header {
+    padding: 1rem 1.35rem;
+    margin-bottom: 0;
+    background-color: rgba(33, 40, 50, 0.03);
+    border-bottom: 1px solid rgba(33, 40, 50, 0.125);
+}
+.form-control,
+.dataTable-input {
+    display: block;
+    width: 100%;
+    padding: 0.875rem 1.125rem;
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1;
+    color: #69707a;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #c5ccd6;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 0.35rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.nav-borders .nav-link.active {
+    color: #0061f2;
+    border-bottom-color: #0061f2;
+}
+.nav-borders .nav-link {
+    color: #69707a;
+    border-bottom-width: 0.125rem;
+    border-bottom-style: solid;
+    border-bottom-color: transparent;
+    padding: 0.5rem 0;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+textarea{
+    min-height: 250px !important;
+}/*start grid project*/
+.service {
+    position: relative;
+    height: 348px;
+    width: 321px;
+}
+.service .img-holder img {
+    max-width: 100%;
+    position: relative;
+}
+.service .img-holder{
+    width: 100%;
+    height: 50%;
+}
+.service .profileImage {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    top: 118px;
+    left: 10px;
+}
+
+.service_card_title h3 {
+    margin: 25px 0 8px;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+
+.service_card_cat a {
+    margin: 3px 0;
+    font-size: 17px;
+    color: #777;
+}
+.service_card_pricing {
+    font-size: 14px;
+}
+.service_card_pricing span {
+    font-weight: bold;
+}
+
+/*end project grid*/
+/***********************************Projects design*****************************************/
+/*.card .card-title{
+    font-size: 17px !important;
+    margin: 10px 0 4px !important;
+    text-transform: capitalize;
+}
+.card .projectImage{
+    position: relative;
+}
+.card .profileImage{
+    width: 50px;
+    border-radius: 50%;
+    position: absolute;
+    right: 10px;
+    bottom: 42%;
+}
+.card .cat{
+    font-size: 14px;
+    margin: 10px 0;
+    display: block;
+}
+.card .price{
+    margin: 10px 0 7px;
+    font-size: 16px;
+}
+.card .price span{
+    margin-left: 4px;
+    font-weight: bold;
+}*/
+/***************************One Project Design****************************/
+.headProject{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.ownerService{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+.ownerService >div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.buyService{
+    margin: 30px 0 100px;
+    background: #eee;
+    padding: 30px 0;
+    text-align: center;
+}
+

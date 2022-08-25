@@ -1,0 +1,26 @@
+.category-head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+.category-head a:first-of-type{
+flex-basis: 10%;
+}
+.category-head h1{
+    font-size: 24px;
+    font-weight: normal;
+    transition: .4s linear;
+}
+.category-head h1:hover{
+    color:#22c03c;
+}
+.pr-file{
+    width: 60px !important;;
+    height: 60px !important;;
+    border-radius: 50% !important;;
+    position: absolute !important;;
+    top: 0% !important;
+    left: 5% !important;
+}
